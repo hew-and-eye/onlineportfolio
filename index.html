@@ -1,32 +1,80 @@
 ﻿<!DOCTYPE html>
 
 <html>
+
 <head>
     <meta charset="utf-8" />
     <title>Matthew Bernardo</title>
     <link rel="stylesheet" type="text/css" href="CSS/layout.css">
 </head>
+
 <body>
     <div style="display:none" id="default-focus" tabindex="1"></div>
     <div class="profile-banner">
         <img class="profile-pic" src="Assets/Profile Pic.jpg" />
-        <p style="font-size:18pt; margin:0; font-weight:bold">Matthew Bernardo</p>
-        <p style="font-size:14pt; margin:0;">Software Developer + Mechanical Engineer</p>
+        <div class="profile-banner-caption">
+            <p style="font-size:18pt; margin:0; font-weight:bold">Matthew Bernardo</p>
+            <p style="font-size:14pt; margin:0;">Software Developer + Mechanical Engineer</p>
+        </div>
     </div>
     <div class="scrolled-header" id="scrolled-header">
         <img style="width:8vh; margin-top:2vh; float:left; margin-left:20px;" class="profile-pic" src="Assets/Profile Pic.jpg" />
         <div style="margin-left:20px;margin-top:4vh; float:left">
-            Matthew Bernardo - matthew.r.bernardo@gmail.com, +1 (651) 431-1686
+            Matthew Bernardo
         </div>
     </div>
-    <div style="width:100%; background-color:blue;">
+    <div class="ribbon">
         <div class="profile-tab" id="about-tab" tabindex="2">ABOUT</div>
         <div class="profile-tab" id="skills-tab" tabindex="3">SKILLS</div>
         <div class="profile-tab" tabindex="4">CONTACT</div>
         <div class="profile-tab" tabindex="5">PERSONAL PROJECTS</div>
         <div class="profile-tab" tabindex="6">WORK EXPERIENCE</div>
     </div>
-    <div class="portfolio-content"></div>
+    <div class="portfolio-content">
+        <div class="portfolio-content-scroller" id="content-scroller">
+            <div class="portfolio-segment">
+                <h1>At a glance</h1>
+                <div class="portfolio-segment-block">
+                    <div style="font-weight:bold; margin-bottom:10px; font-size:16pt;">Education</div>
+                    <div>
+                        Bachelor's Degree in Mechanical Engineering with a minor in Computer Science from the University of Minnesota. Graduated
+                        Fall 2016. Major focuses on Control Theory, Fluid Power, and Finite Element Analysis. Minor focuses
+                        on Artificial Intelligence, Algorithms, Automata, and Discrete Math.
+                    </div>
+                </div>
+                <div class="portfolio-segment-block">
+                    <div style="font-weight:bold; margin-bottom:10px; font-size:16pt;">What I've Done</div>
+                    <div>
+                        I've worked on neutrino detectors, built lab equipment, been a camp counselor, teacher, farmhand, curriculum developer, and
+                        am currently working as a software developer. I've worked on web and mobile projects. I've built
+                        my own game engines, artificial intelligences, guitar pedals, and synthesizers.
+                    </div>
+                </div>
+                <div class="portfolio-segment-block">
+                    <div style="font-weight:bold; margin-bottom:10px; font-size:16pt;">Get In Touch</div>
+                    <div>
+                        Email: matthew.r.bernardo@gmail.com <br/> Phone: +1 (651) 431-1686 <br/> Social Media:
+                    </div>
+                    <img class="social-media-icon" src="Assets/linkedin_icon.png">
+                    <img class="social-media-icon" src="Assets/facebook_icon.png">
+                    <img class="social-media-icon" src="Assets/instagram_icon_round.png">
+                </div>
+            </div>
+            <div class="portfolio-segment">
+                <h1>About Me</h1>
+                <div class="portfolio-segment-block">
+                    <div>
+                        I’m a quick learner with a broad set of skills in both Mechanical Engineering and Computer Science. I enjoy opportunities
+                        to creatively solve problems and challenge myself, and I put that energy into my work, taking the
+                        initiative to go above and beyond my job duties when I see a way to help. I enjoy teaching and working
+                        with children, which has given me strong communication skills. My hobbies include writing music,
+                        playing guitar, sports, video games, and designing hardware and software I’ll probably never build.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="js/portfoliojs.js"></script>
 </body>
+
 </html>
