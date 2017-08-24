@@ -1,0 +1,53 @@
+﻿body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin:0;
+}
+
+.profile-banner {
+    padding-top:30px;
+    padding-bottom:10px;
+    text-align:center;
+    background-color:whitesmoke;
+}
+
+.profile-pic {
+    width:15%;
+    height:auto;
+    border-radius:100%;
+}
+
+.profile-tab {
+    text-align:center;
+    background-color:aqua;
+    width:20%;
+    float:left;
+    cursor:none;
+    padding-top:5px;
+    padding-bottom:5px;
+}
+
+.profile-tab:focus {
+    background-color:red;
+    box-shadow: 0px 2px 5px #888888;
+}
+
+.profile-tab:focus ~ .profile-banner {
+    background-color:red;
+    
+}
+
+.profile-tab:hover {
+    background-color:red;
+    box-shadow: 0px 2px 5px #888888;
+}
+
+.portfolio-content {
+    height:88vh;
+}
+
+.scrolled-header {
+    background-color:aqua;
+    width:100%;
+    overflow:hidden;
+    height:0px;
+}
