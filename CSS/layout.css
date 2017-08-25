@@ -9,8 +9,10 @@ button {
     border-width: medium;
     border-color:#ff3c3c;
     color:white;
-    padding:5px;
-    width:10%;
+    height:6vh;
+    margin-top:3vh;
+    padding-left:20px;
+    padding-right:20px;
     border-radius:2px;
     cursor:pointer;
 }
@@ -85,9 +87,10 @@ button {
 }
 
 .portfolio-content {
-    height:83vh;
+    /* height:83vh; */
     width:100%;
-    overflow:auto;
+    overflow:hidden;
+    overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
@@ -101,6 +104,7 @@ button {
 }
 
 .portfolio-segment {
+    height:83vh;
     width:100vw;
     float: left;
     margin-left:20px;
@@ -126,4 +130,18 @@ button {
 
 .social-media-icon {
     width:20%;
+}
+
+.vertical-scroller-holder {
+    overflow: scroll;
+    height:100%;
+    padding-bottom:20vh;
+}
+.vertical-scroller {
+    overflow: auto;
+    padding-bottom: 30vh;
+}
+.vertical-scroller-section {
+    clear: both;
+    margin-bottom:20vh;
 }
