@@ -17,9 +17,14 @@
     margin:0;
     padding-bottom: 10px; 
 }
+.ribbon-holder {
+    width:100%;
+    overflow:auto;
+}
 
 .ribbon {
     width:100%; 
+    min-width:1000px;
     background-image: url('../Assets/banner_background.png');
 }
 
@@ -34,6 +39,7 @@
     color: white;
     background-color:#020202;
     width:20%;
+    min-width:200px;
     float:left;
     cursor:pointer;
     padding-top:5px;

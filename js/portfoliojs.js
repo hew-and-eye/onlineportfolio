@@ -14,8 +14,9 @@ let scrollDown = function (evt, marginIndex) {
             window.scrollTo(0, clientHeight);
             //console.log("yo");
             clearInterval(id);
-        } 
-        document.getElementById("content-scroller").style.marginLeft = (-marginIndex*100) + "vw";
+            //document.getElementById("content-scroller").style.marginLeft = (-marginIndex * 100) + "vw";
+        }
+        document.getElementById("content-scroller").style.marginLeft = (-marginIndex * 100) + "vw";
         //console.log("hi");
     }
     let id = setInterval(scrollInterval, 1);
