@@ -3,8 +3,8 @@ let clientHeight = window.innerHeight;
 let adjustFixedScrollbar = function (evt, marginIndex) {
     scrolledHeaderHeight = Math.min(clientHeight * 0.12, document.body.scrollTop);
     document.getElementById("scrolled-header").style.height = scrolledHeaderHeight + "px";
-    if(document.body.scrollTop < clientHeight*0.4)
-        document.getElementById("content-scroller").style.marginLeft = 0;
+    // if(document.body.scrollTop < clientHeight*0.4)
+    //     document.getElementById("content-scroller").style.marginLeft = 0;
 };
 
 let scrollDown = function (evt, marginIndex) {
