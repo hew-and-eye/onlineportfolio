@@ -3,6 +3,18 @@
     margin:0;
 }
 
+button {
+    background-color: #ff3c3c;
+    border-style: solid;
+    border-width: medium;
+    border-color:#ff3c3c;
+    color:white;
+    padding:5px;
+    width:10%;
+    border-radius:2px;
+    cursor:pointer;
+}
+
 .profile-banner {
     /*padding-top:30px;*/
     text-align:center;
@@ -30,11 +42,13 @@
 .ribbon-holder {
     width:100%;
     overflow:auto;
+    background-color:#020202;
 }
 
 .ribbon {
-    width:100%; 
-    min-width:1000px;
+    width: 100%;
+    min-width: 1000px;
+    background-color: #020202;
 }
 
 .profile-pic {
