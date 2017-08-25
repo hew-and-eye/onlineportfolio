@@ -22,6 +22,7 @@ let scrollDown = function (evt, marginIndex) {
 }
 window.addEventListener("scroll", (event) => {adjustFixedScrollbar(event, 1)});
 document.getElementById("about-tab").addEventListener("click", (event) => {scrollDown(event, 1)});
+document.getElementById("skills-tab").addEventListener("click", (event) => {scrollDown(event, 2)});
 
 window.onload = function () {
     document.getElementById("default-focus").focus();

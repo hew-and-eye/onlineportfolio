@@ -76,11 +76,15 @@
 }
 
 .portfolio-segment-block {
-    width:30vw;
+    width:31vw;
     float: left;
     margin-right: 15px;
 }
-
+.portfolio-segment-wide-block {
+    width:46vw;
+    float: left;
+    margin-right: 15px;
+}
 .scrolled-header {
     background-color:#020202;
     color:white;
