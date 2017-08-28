@@ -27,9 +27,9 @@ document.getElementById("home-tab").addEventListener("click", (event) => { docum
 document.getElementById("about-tab").addEventListener("click", (event) => {scrollDown(event, 1)});
 document.getElementById("skills-tab").addEventListener("click", (event) => { scrollDown(event, 2) });
 document.getElementById("projects-tab").addEventListener("click", (event) => { scrollDown(event, 3); });
+document.getElementById("work-tab").addEventListener("click", (event) => { scrollDown(event, 4); });
 
 window.onload = function () {
     document.getElementById("default-focus").focus();
     document.getElementById("about-tab").blur();
-    window.scrollTo(0, 0);
 }

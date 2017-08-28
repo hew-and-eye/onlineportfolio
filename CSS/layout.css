@@ -120,7 +120,7 @@ button {
     height: 83vh;
     width: 100vw;
     float: left;
-    margin-left: 20px;
+    /* margin-left: 20px; */
 }
 
 @media (max-width: 600px) {
