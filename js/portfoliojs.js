@@ -16,13 +16,15 @@ let scrollDown = function (evt, marginIndex) {
             clearInterval(id);
             //document.getElementById("content-scroller").style.marginLeft = (-marginIndex * 100) + "vw";
         }
-        document.getElementById("content-scroller").style.marginLeft = (-marginIndex * 100) + "vw";
+        if(marginIndex > -1)
+            document.getElementById("content-scroller").style.marginLeft = (-marginIndex * 100) + "vw";
         //window.scrollTo(0, window.scrollTop);
         //console.log("hi");
     }
     let id = setInterval(scrollInterval, 1);
 }
 window.addEventListener("scroll", (event) => { adjustFixedScrollbar(event, 1) });
+document.getElementById("projects-scroller").addEventListener("scroll", (event) => {scrollDown(event, -1)});
 document.getElementById("home-tab").addEventListener("click", (event) => { document.getElementById("content-scroller").style.marginLeft = 0; });
 document.getElementById("about-tab").addEventListener("click", (event) => {scrollDown(event, 1)});
 document.getElementById("skills-tab").addEventListener("click", (event) => { scrollDown(event, 2) });
