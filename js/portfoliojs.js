@@ -1,4 +1,5 @@
 ﻿let scrolledHeaderHeight = 0;
+let contentScrollIndex = 0;
 let clientHeight = window.innerHeight;
 let adjustFixedScrollbar = function (evt, marginIndex) {
     scrolledHeaderHeight = Math.min(clientHeight * 0.12, document.body.scrollTop);
@@ -30,6 +31,20 @@ document.getElementById("about-tab").addEventListener("click", (event) => {scrol
 document.getElementById("skills-tab").addEventListener("click", (event) => { scrollDown(event, 2) });
 document.getElementById("projects-tab").addEventListener("click", (event) => { scrollDown(event, 3); });
 document.getElementById("work-tab").addEventListener("click", (event) => { scrollDown(event, 4); });
+
+document.getElementById("prev-tab").addEventListener("click", (event) => {
+    if(contentScrollIndex > 0)
+        contentScrollIndex--;
+    else contentScrollIndex = 4;
+        document.getElementById("content-scroller").style.marginLeft = (-contentScrollIndex * 100) + "vw";
+ });
+
+ document.getElementById("next-tab").addEventListener("click", (event) => {
+    if(contentScrollIndex < 4)
+        contentScrollIndex++;
+    else contentScrollIndex = 0;
+        document.getElementById("content-scroller").style.marginLeft = (-contentScrollIndex * 100) + "vw";
+ });
 
 window.onload = function () {
     document.getElementById("default-focus").focus();
