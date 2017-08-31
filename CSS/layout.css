@@ -219,6 +219,12 @@ button {
     height: 0px;
 }
 
+.scrolled-header-text {
+    margin-left: 20px;
+    margin-top: 4vh;
+    float: left
+}
+
 @media (max-width: 600px), (orientation: portrait) {
     .scrolled-header-text {
         display: none;
