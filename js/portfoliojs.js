@@ -36,14 +36,16 @@ document.getElementById("prev-tab").addEventListener("click", (event) => {
     if(contentScrollIndex > 0)
         contentScrollIndex--;
     else contentScrollIndex = 4;
-        document.getElementById("content-scroller").style.marginLeft = (-contentScrollIndex * 100) + "vw";
+    document.getElementById("content-scroller").style.marginLeft = (-contentScrollIndex * 100) + "vw";
+    scrollDown(event, -1);
  });
 
  document.getElementById("next-tab").addEventListener("click", (event) => {
     if(contentScrollIndex < 4)
         contentScrollIndex++;
     else contentScrollIndex = 0;
-        document.getElementById("content-scroller").style.marginLeft = (-contentScrollIndex * 100) + "vw";
+    document.getElementById("content-scroller").style.marginLeft = (-contentScrollIndex * 100) + "vw";
+    scrollDown(event, -1);
  });
 
 window.onload = function () {

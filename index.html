@@ -23,7 +23,7 @@
     </div>
     <div class="scrolled-header" id="scrolled-header">
         <img style="width:8vh; margin-top:2vh; float:left; margin-left:20px;" class="profile-pic" src="Assets/Profile Pic.jpg" />
-        <div style="margin-left:20px;margin-top:4vh; float:left">
+        <div class="scrolled-header-text">
             Matthew Bernardo
         </div>
         <button style="margin-right:4vh; float:right">
@@ -39,8 +39,8 @@
             <div class="profile-tab" id="skills-tab" tabindex="4">SKILLS</div>
             <div class="profile-tab" id="projects-tab" tabindex="5">SOME PROJECTS</div>
             <div class="profile-tab" id="work-tab" tabindex="6">WORK EXPERIENCE</div>
-            <div class="profile-mobile-tab" id="prev-tab" tabindex="7"> &lt; PREVIOUS</div>
-            <div class="profile-mobile-tab" id="next-tab" tabindex="8">NEXT &gt; </div>
+            <div class="profile-mobile-tab" id="prev-tab" tabindex="7">PREVIOUS</div>
+            <div class="profile-mobile-tab" id="next-tab" tabindex="8">NEXT</div>
         </div>
     </div>
     <div class="portfolio-content">
@@ -116,15 +116,15 @@
                     <div>
                         <!-- <div style="float:left;width:32%; margin-right:5px;"> -->
                         <div class="portfolio-segment-sub-block">
-                            <span style="font-weight:bold; text-align:center;">I'm best with</span> <br/> Java, HTML, CSS,
+                            <span style="font-weight:bold; text-align:center;">I'm best with</span> <br /> Java, HTML, CSS,
                             Javascript, Angularjs, Android, Android Wear
                         </div>
                         <div class="portfolio-segment-sub-block">
-                            <span style="font-weight:bold; text-align:center;">I'm okay with</span> <br/> C#, Xamarin, Salesforce,
+                            <span style="font-weight:bold; text-align:center;">I'm okay with</span> <br /> C#, Xamarin, Salesforce,
                             Lightning, Visualforce, Apex, MySQL, Android Instant Apps, Matlab
                         </div>
                         <div class="portfolio-segment-sub-block">
-                            <span style="font-weight:bold; text-align:center;">I dabble with</span> <br/> Python, Scheme,
+                            <span style="font-weight:bold; text-align:center;">I dabble with</span> <br /> Python, Scheme,
                             Fortran, C++ Realtime Array Parsing
                         </div>
                     </div>
@@ -165,8 +165,7 @@
                                 <div>
                                     I built a simple robot to demonstrate a reinforcement learning AI that I created and got it to demonstrate pathfinding capabilities
                                     on limited hardware. I found ways to compensate for a low-resolution color sensor, a
-                                    lack of motor encoders, and battery drainage. <br
-                                    /> <br /> The robot was built under tight budget constraints. and had to demonstrate
+                                    lack of motor encoders, and battery drainage. <br /> <br /> The robot was built under tight budget constraints. and had to demonstrate
                                     its abilities within a time limit, which is especially limiting for a model-free reinforcement
                                     learning model. It performed adequately despite these constraints.
                                 </div>
@@ -270,7 +269,8 @@
                 </div>
             </div>
         </div>
-        <script src="js/portfoliojs.js"></script>
+    </div>
+    <script src="js/portfoliojs.js"></script>
 </body>
 
 </html>

@@ -15,7 +15,7 @@ button {
     padding-right: 20px;
     border-radius: 2px;
     cursor: pointer;
-    font-family:'Segoe UI';
+    font-family: 'Segoe UI';
 }
 
 @media (max-width: 600px), (orientation: portrait) {
@@ -70,15 +70,15 @@ button {
 }
 
 .splash-pic {
-    width:70%;
-    margin-top:-5vh;
-    border-radius:100%;
-    margin-left:3vw;
+    width: 70%;
+    margin-top: -5vh;
+    border-radius: 100%;
+    margin-left: 3vw;
 }
 
 @media (max-width: 600px), (orientation: portrait) {
     .splash-pic {
-        margin-top:20px;
+        margin-top: 20px;
     }
 }
 
@@ -113,11 +113,11 @@ button {
 }
 
 .profile-mobile-tab {
-    display:none;
+    display: none;
     text-align: center;
     color: white;
     background-color: #020202;
-    width:50vw;
+    width: 50vw;
     float: left;
     cursor: pointer;
     padding-top: 5px;
@@ -139,7 +139,7 @@ button {
 
 @media (max-width: 600px), (orientation: portrait) {
     .portfolio-content {
-        overflow-y:auto;
+        overflow-y: auto;
     }
 }
 
@@ -172,12 +172,12 @@ button {
     margin-right: 15px;
 }
 
-@media (max-width: 600px), (orientation: portrait)  {
+@media (max-width: 600px), (orientation: portrait) {
     .portfolio-segment-block {
         width: 90vw;
         margin-bottom: 40px;
-        margin-left:15px;
-        margin-right:15px;
+        margin-left: 15px;
+        margin-right: 15px;
     }
 }
 
@@ -191,8 +191,8 @@ button {
     .portfolio-segment-sub-block {
         width: 90%;
         margin-bottom: 40px;
-        margin-left:15px;
-        margin-right:15px;
+        margin-left: 15px;
+        margin-right: 15px;
     }
 }
 
@@ -202,12 +202,12 @@ button {
     margin-right: 15px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 600px), (orientation: portrait) {
     .portfolio-segment-wide-block {
         width: 90vw;
         margin-bottom: 40px;
-        margin-left:5px;
-        margin-right:5px;
+        margin-left: 5px;
+        margin-right: 5px;
     }
 }
 
@@ -217,6 +217,15 @@ button {
     width: 100%;
     overflow: hidden;
     height: 0px;
+}
+
+@media (max-width: 600px), (orientation: portrait) {
+    .scrolled-header-text {
+        display: none;
+        margin-left: 20px;
+        margin-top: 4vh;
+        float: left
+    }
 }
 
 .social-media-icon {
