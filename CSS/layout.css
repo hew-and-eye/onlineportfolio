@@ -205,7 +205,7 @@ button {
 @media (max-width: 600px), (orientation: portrait) {
     .portfolio-segment-wide-block {
         width: 90vw;
-        margin-bottom: 40px;
+        margin-bottom: 20px;
         margin-left: 5px;
         margin-right: 5px;
     }
