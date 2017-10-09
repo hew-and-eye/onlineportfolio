@@ -3,6 +3,11 @@
     margin: 0;
 }
 
+#scrolltop-scroller {
+    height:100vh;
+    overflow-y: auto;
+}
+
 button {
     background-color: #ff3c3c;
     border-style: solid;
