@@ -31,6 +31,8 @@ button {
     background-color: #020202;
     color: white;
     background-image: url("../Assets/banner_background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .profile-banner-caption {
@@ -221,6 +223,7 @@ button {
 
 .scrolled-header-text {
     margin-left: 20px;
+    font-weight:bold;
 }
 
 @media (max-width: 600px), (orientation: portrait) {
